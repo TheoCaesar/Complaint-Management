@@ -1,0 +1,207 @@
+.page {
+  /* border:  20px solid red; */
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+}
+.start {
+  width: 75%;
+  background-color: #f5f5f5;
+}
+
+.bg1{
+  position: absolute;
+  width: 25px;
+  height: 300px;
+  top: 0;
+  left: 60vw;
+  background: url(../../../assets/bars.svg) no-repeat;
+  background-size: 20px;
+
+}
+
+.bg2{
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  top: 79vh;
+  left: 10vw;
+  background-image: url(../../../assets/dotted-squares.svg);
+  background-size: 120px;
+}
+
+.end {
+  background-color: #fd7401;
+  width: 25%;
+  height: 100%;
+}
+
+.container {
+  border: 10px solid #1e2272;
+  border-radius: 50px;
+  position: absolute;
+  top:15vh;
+  right: 15vw;
+  width: 70vw;
+  height: 70vh;
+  background-color: #f1f3f7;
+  display: flex;
+  flex-direction: row;
+}
+
+.form-div {
+  width: 35%;
+  background-color: #fff;
+  /* border: 2px solid rgb(111, 0, 255); */
+  border-top-left-radius: 40px;
+  border-bottom-left-radius: 40px;
+}
+
+.login-form, .signup-form {
+  width: 80%;
+  margin: 80px auto;
+}
+
+form .input-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  border: 2px solid red;
+  border-radius: 8px;
+  position: absolute;
+  border: none;
+  background-color: #f1f3f6;
+}
+
+.input-container input {
+  border: none;
+  outline: none;
+  box-shadow: none;
+  background-color: #f1f3f6;
+}
+
+.input-container img {
+  position: relative;
+  bottom: 0;
+  left:10px
+}
+
+.signup-form {
+  margin-top: 70px;
+}
+
+.signup-form form {
+  margin-top: 20px;
+}
+
+
+label + .input-container {
+  position: relative;
+}
+
+.heading {
+  text-align: center;
+}
+
+.header {
+  margin-top: 10px;
+  font-size: 55px;
+  color: #1e2772;
+}
+
+form div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.login-form form label {
+  margin-bottom: 5px;
+}
+
+.login-form form div {
+  margin-block: 10px;
+}
+
+.signup-form form div {
+  margin-block: 7px;
+}
+
+form input {
+  height: 38px;
+  border-radius: 8px;
+  padding-left: 8px;
+  width: 100%;
+}
+
+.alt-link {
+  font-size: 11px;
+  cursor: pointer;
+
+}
+
+.login-form .alt-link {
+  float: right;
+  clear:both;
+}
+
+.signup-form .alt-link {
+  margin-top: 20px;
+    text-align: center;
+}
+
+button {
+  width: 100%;
+  margin: 10px 0;
+  padding: 7px;
+  font-size: 12px ;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+form button {
+  color: white;
+  background-color: #fd7401;
+  border: none;
+}
+
+.signup-form form button {
+  margin-block: 20px;
+}
+
+.or  + button {
+  color: #fd7401;
+  background-color: #ffffff;
+  border: 2px solid #fd7401;
+}
+
+.or {
+ display: flex;
+ flex-direction: row;
+ width: 100%;
+ justify-content: center;
+ align-items: center;
+ margin-block: 10px;
+}
+
+.or hr {
+  width: 100%;
+  height: 0.1px;
+}
+
+.or span {
+  margin-inline: 10px;
+  font-size: 10px;
+  color: #c2c2c2;
+}
+
+.bg-img {
+  width: 65%;
+  background-color: #f1f3f6;
+  /* border: 2px solid red; */
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
+  background: url(../../../assets/Mobilelogin-pana1.svg) center no-repeat ;
+  background-size: 480px;
+}
