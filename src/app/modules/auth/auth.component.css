@@ -106,7 +106,7 @@ label + .input-container {
 
 .header {
   margin-top: 10px;
-  font-size: 55px;
+  font-size: 28px;
   color: #1e2772;
 }
 
@@ -120,11 +120,11 @@ form div {
   margin-bottom: 5px;
 }
 
-.login-form form div {
+.login-form form .form-field {
   margin-block: 10px;
 }
 
-.signup-form form div {
+.signup-form form .form-field {
   margin-block: 7px;
 }
 
@@ -205,3 +205,54 @@ form button {
   background: url(../../../assets/Mobilelogin-pana1.svg) center no-repeat ;
   background-size: 480px;
 }
+
+@media screen and (max-width: 1600px){
+  .login-form, .signup-form {
+    width: 80%;
+    margin: 40px auto;
+  }
+
+  .heading img {
+    width:100px
+  }
+
+  form .alt-link {
+    font-size: 10px;
+  }
+
+  .alt-link:hover {
+    color:#1e2272;
+    font-size: 12px;
+    text-decoration: underline;
+  }
+
+  .login-form form {
+    margin-block: 15px;
+  }
+
+  .login-form form label {
+    margin-bottom: 0;
+  }
+
+  .login-form form .form-field, .input-container {
+    margin-block: 5px;
+  }
+
+  .login-form button {
+    margin-top: 15px;
+  }
+
+  .signup-form form button {
+    margin-block: 20px 5px;
+  }
+
+  /* .signup-form form button:hover {
+    background-color: #1e2272;
+  } */
+
+  .signup-form .alt-link{
+    margin-top: 5px;
+  }
+}
+
+

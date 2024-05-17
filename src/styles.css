@@ -119,3 +119,11 @@
   font-weight: 900;
   font-style: italic;
 }
+
+
+@media screen and (max-width:1600px) {
+  * {
+    font-size: 12px;
+  }
+
+}

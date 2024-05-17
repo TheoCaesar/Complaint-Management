@@ -7,20 +7,20 @@
     <div class="container">
       <div class="form-div">
         <!-- login form -->
-        <!-- <div class="login-form">
+        <div class="login-form" *ngIf="isLogin">
           <div class="heading">
             <img src="../../../assets/megaphone.svg" width="150px" alt="" class="icon">
             <div class="header russo-one-regular">speakUp</div>
           </div>
           <form>
-            <div class="email">
+            <div class="form-field">
               <label for="email">Email address</label>
               <div class="input-container">
                 <input type="text">
                 <img src="../../../assets/msg-icon.svg" width="45px" alt="">
               </div>
             </div>
-            <div class="email">
+            <div class="form-field">
               <label for="email">Password</label>
               <div class="input-container">
                 <input type="text">
@@ -33,31 +33,31 @@
           <div class="or">
             <hr><span>OR</span><hr>
           </div>
-          <button>Signup now</button>
-        </div> -->
+          <button (click)="toggleIsLogin()">Signup now</button>
+        </div>
 
         <!-- sign up form -->
-        <div class="signup-form">
+        <div class="signup-form" *ngIf="!isLogin">
           <div class="heading">
             <img src="../../../assets/megaphone.svg" width="150px" alt="" class="icon">
             <div class="header russo-one-regular">speakUp</div>
           </div>
           <form>
-            <div class="email">
+            <div class="form-field">
               <label for="email">Email address</label>
               <div class="input-container">
                 <input type="text">
                 <img src="../../../assets/msg-icon.svg" width="45px" alt="">
               </div>
             </div>
-            <div class="email">
+            <div class="form-field">
               <label for="email">Password</label>
               <div class="input-container">
                 <input type="text">
                 <img src="../../../assets/padlock-icon.svg" width="45px" alt="">
               </div>
             </div>
-            <div class="password">
+            <div class="form-field">
               <label for="password">Confirm Password</label>
              <div class="input-container">
                 <input type="text">
@@ -67,7 +67,7 @@
             <button>Signup now</button>
           </form>
 
-          <p class="alt-link">Already have an account? Login now</p>
+          <p class="alt-link" (click)="toggleIsLogin()">Already have an account? Login now</p>
         </div>
       </div>
       <div class="bg-img"></div>

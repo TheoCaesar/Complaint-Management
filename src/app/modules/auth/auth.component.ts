@@ -6,10 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./auth.component.css']
 })
 export class AuthComponent implements OnInit {
-
+  isLogin:boolean = true;
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  toggleIsLogin() {
+    this.isLogin = !this.isLogin;
   }
 
 }
