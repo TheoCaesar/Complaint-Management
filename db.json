@@ -1,0 +1,46 @@
+{
+  "users": [
+    {
+      "staffId": "A2402012",
+      "name": {
+        "firstname": "Jurgen",
+        "otherNames": "Obiba",
+        "lastname": "Klopp"
+      },
+      "gender": "M",
+      "dob":"7/28/98",
+      "contactInfo": {
+        "phone":"597412563",
+        "email":"jurgenobiba.klopp@solv.com.gh",
+        "address":"Kasoa"
+      },
+      "jobTitle":"client service analyst",
+      "department": "IT",
+      "staffType": "contract",
+      "employmentStatus":"active",
+      "salary":2500,
+      "startDate": "2/24/2024",
+      "endDate": "12/31/2024"
+    }
+  ],
+  "complaints": [
+    {
+      "reporter": "Jurgen",
+      "complaintID": "abc10024",
+      "complaintDate" : "5/18/24",
+      "incidentDate": "4/22/24",
+      "category": "conflicts",
+      "urgency": "moderate",
+      "subject": "Cross team dysfunction",
+      "description": "theres been unusual conflicts between team members in the last sprint; even to the point of it affecting team performance",
+      "witness": "thomas",
+      "previousComplaint": false,
+      "desiredOutcome": "speak to HR",
+      "otherOutcome": "",
+      "preferredContactMethod": "email",
+      "additionalInfo": "",
+      "turnaroundTime": 2,
+      "status": "new"
+    }
+  ]
+}
