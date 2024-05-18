@@ -1,12 +1,30 @@
 import { User } from "./user";
+export interface Category {
+  id?: number;
+  name: string;
+  iconUrl: string;
+}
+
+export interface Priority{
+  id?:number;
+  name: string;
+  iconUrl:string;
+}
+
+export interface Status {
+  id?:number;
+  name: string;
+  iconUrl:string;
+}
+
 
 export interface Complaint {
   reporter: User | string;
   complaintID: string;
   complaintDate: string | Date;
   incidentDate: string | Date;
-  category: 'service request' | 'product' | 'conflicts' | 'employee behavior' | 'other';
-  urgency: "low" | "moderate" | "high" | "critical" | string;
+  category: Category | string;
+  priority: Priority | string;
   subject: string;
   description: string;
   evidence?: string[];
@@ -18,7 +36,7 @@ export interface Complaint {
   preferredContactMethod: 'phone' | 'email';
   additionalInfo?: string;
   turnaroundTime: number ;//weeks - max(4) - in component
-  status: "new" | "open" | "in progress" | "closed" | "overdue";
+  status: Status | string;
   solution?: string //admin
 }
 
