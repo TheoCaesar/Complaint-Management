@@ -66,10 +66,10 @@ form .input-container {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: start;
+  justify-content: flex-start;
   border: 2px solid red;
   border-radius: 8px;
-  position: absolute;
+  /* position: absolute; */
   border: none;
   background-color: #f1f3f6;
 }
@@ -79,6 +79,10 @@ form .input-container {
   outline: none;
   box-shadow: none;
   background-color: #f1f3f6;
+}
+
+label + .input-container {
+  position: relative;
 }
 
 .input-container img {
@@ -96,9 +100,6 @@ form .input-container {
 }
 
 
-label + .input-container {
-  position: relative;
-}
 
 .heading {
   text-align: center;
@@ -135,10 +136,15 @@ form input {
   width: 100%;
 }
 
+.error-msg {
+  color: red;
+  font-size: 10px;
+  margin-bottom: 5px;
+}
+
 .alt-link {
   font-size: 11px;
   cursor: pointer;
-
 }
 
 .login-form .alt-link {
@@ -166,14 +172,16 @@ form button {
   border: none;
 }
 
-.signup-form form button {
-  margin-block: 20px;
+form button:disabled {
+  cursor:not-allowed;
+  background-color: #fd7401;
+  font-size: 14px;
+  font-weight: 800;
+  opacity: 0.3;
 }
 
-.or  + button {
-  color: #fd7401;
-  background-color: #ffffff;
-  border: 2px solid #fd7401;
+.signup-form form button {
+  margin-block: 20px;
 }
 
 .or {
@@ -196,6 +204,12 @@ form button {
   color: #c2c2c2;
 }
 
+.or  + button {
+  color: #fd7401;
+  background-color: #ffffff;
+  border: 2px solid #fd7401;
+}
+
 .bg-img {
   width: 65%;
   background-color: #f1f3f6;
@@ -207,6 +221,23 @@ form button {
 }
 
 @media screen and (max-width: 1600px){
+  .container{
+    height: 72vh;
+  }
+
+  .bg2{
+    top: 80vh;
+  }
+
+  .login-err-msg{
+    margin-top: 5px;
+    padding: 5px;
+    text-align: center;
+    color: #ffffff;
+    background-color: red;
+    border-radius: 5px;
+  }
+
   .login-form, .signup-form {
     width: 80%;
     margin: 40px auto;
@@ -227,7 +258,7 @@ form button {
   }
 
   .login-form form {
-    margin-block: 15px;
+    margin-block: 15px 20px;
   }
 
   .login-form form label {
@@ -249,9 +280,12 @@ form button {
   /* .signup-form form button:hover {
     background-color: #1e2272;
   } */
+  .signup-form .error-msg {
+    margin-top: 5px;
+  }
 
   .signup-form .alt-link{
-    margin-top: 5px;
+    margin-top: 15px;
   }
 }
 

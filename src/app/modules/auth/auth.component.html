@@ -12,23 +12,39 @@
             <img src="../../../assets/megaphone.svg" width="150px" alt="" class="icon">
             <div class="header russo-one-regular">speakUp</div>
           </div>
-          <form>
+          <!-- login failed -->
+          <p class="login-err-msg" *ngIf="loginForm.controls.email.touched && loginForm.controls.password.touched && loginForm.invalid">
+            Login failed: Email or Password is incorrect
+          </p>
+          <form [formGroup]="loginForm">
             <div class="form-field">
               <label for="email">Email address</label>
               <div class="input-container">
-                <input type="text">
+                <input type="text" formControlName="email">
                 <img src="../../../assets/msg-icon.svg" width="45px" alt="">
               </div>
+              <p class='error-msg'
+                *ngIf="loginForm.controls.email.touched && loginForm.controls.email.value ==''">
+                Please enter an email address
+              </p>
+              <p class='error-msg'
+                *ngIf="loginForm.controls.email.touched && loginForm.controls.email.invalid">
+                Please enter a valid email address
+              </p>
             </div>
             <div class="form-field">
               <label for="email">Password</label>
               <div class="input-container">
-                <input type="text">
+                <input type="password" formControlName="password">
                 <img src="../../../assets/padlock-icon.svg" width="45px" alt="">
               </div>
+              <p class='error-msg'
+                *ngIf="loginForm.controls.password.touched && loginForm.controls.password.value ==''">
+                Please enter your password
+              </p>
             </div>
             <p class="alt-link">Forgot password?</p>
-            <button>Login now</button>
+            <button [disabled]="loginForm.invalid" (click)="login()">Login now</button>
           </form>
           <div class="or">
             <hr><span>OR</span><hr>
@@ -42,29 +58,49 @@
             <img src="../../../assets/megaphone.svg" width="150px" alt="" class="icon">
             <div class="header russo-one-regular">speakUp</div>
           </div>
-          <form>
+          <form [formGroup]="signupForm" (ngSubmit)="signup()">
             <div class="form-field">
               <label for="email">Email address</label>
               <div class="input-container">
-                <input type="text">
+                <input type="text"  formControlName="email">
                 <img src="../../../assets/msg-icon.svg" width="45px" alt="">
               </div>
+              <p class='error-msg'
+                *ngIf="signupForm.controls.email.touched && signupForm.controls.email.value ==''">
+                Please enter an email address
+              </p>
+              <p class='error-msg'
+                *ngIf="signupForm.controls.email.touched && signupForm.controls.email.invalid">
+                Please enter a valid email address
+              </p>
             </div>
             <div class="form-field">
               <label for="email">Password</label>
               <div class="input-container">
-                <input type="text">
+                <input type="password" formControlName="password1">
                 <img src="../../../assets/padlock-icon.svg" width="45px" alt="">
               </div>
+              <p class='error-msg'
+                *ngIf="signupForm.controls.password1.touched && signupForm.controls.password1.value ==''">
+                Please enter your password
+              </p>
             </div>
             <div class="form-field">
               <label for="password">Confirm Password</label>
-             <div class="input-container">
-                <input type="text">
+              <div class="input-container">
+                <input type="password"  formControlName="password2">
                 <img src="../../../assets/padlock-icon.svg" width="45px" alt="">
               </div>
+              <p class='error-msg'
+                *ngIf="signupForm.controls.password2.touched && signupForm.controls.password2.value ==''">
+                Please confirm your password
+              </p>
+              <p class='error-msg'
+                *ngIf="signupForm.controls.password2.touched && signupForm.controls.password1.value !==signupForm.controls.password2.value">
+                Try again;Passwords don't match
+              </p>
             </div>
-            <button>Signup now</button>
+            <button [disabled]="signupForm.invalid || signupForm.controls.password1.value !==signupForm.controls.password2.value " type="submit">Signup now</button>
           </form>
 
           <p class="alt-link" (click)="toggleIsLogin()">Already have an account? Login now</p>
