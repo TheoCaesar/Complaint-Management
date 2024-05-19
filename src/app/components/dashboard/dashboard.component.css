@@ -1,0 +1,125 @@
+.container {
+  border: 2px solid red;
+  display: flex;
+  flex-direction: row;
+  overflow-x: scroll;
+}
+
+
+.content, .sidebar {
+  border: 2px solid blue;
+  /* height: 100%; */
+}
+
+.sidebar {
+  position: absolute;
+  height: 95%;
+  max-width: 30vw;
+  margin-bottom: 10px;
+}
+
+.content {
+  max-width: 1;
+  position: relative;
+  left: 60px;
+  position: relative;
+}
+
+.shrinkContent {
+  width: 70%;
+}
+
+.cards {
+  border: 2px solid seagreen;
+  margin: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border-radius: 20px;
+  overflow-x: scroll;
+}
+
+.card {
+  border: 2px solid peru;
+  height: 120px;
+  width: 250px;
+  margin: 15px;
+  padding-inline: 20px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-details, .response-details {
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-between; */
+}
+
+.info , .icon{
+  /* margin-inline: 15px; */
+  display: flex;
+  align-items: center;
+}
+
+.info {
+  margin-left: 15px;
+}
+
+
+.card .info p, .card .count p {
+  /* font-size: 16px; */
+}
+
+.tab {
+  border: 2px solid orange;
+  margin: 20px;
+  height:65vh;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.left , .right {
+  margin:15px; height:94%;
+  border: 2px solid purple;
+  border-radius: 10px;
+}
+
+.tab .left {
+  width: 70%;
+}
+
+.tab .right {
+  width: 30%;
+  padding: 10px;
+}
+
+.categories, .responses {
+  padding: 5px 10px 0;
+  border: 2px solid red;
+  margin-bottom: 5px;
+}
+
+.tab .right .category-card, .response-card {
+  /* font-size: 16px; */
+  border: 2px solid purple;
+  margin-block: 13px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* .category-card:last-child {
+  margin-bottom: 5px;
+} */
+
+.tab .right .category-card .category-details {
+  display: flex;
+  flex-direction: row;
+}

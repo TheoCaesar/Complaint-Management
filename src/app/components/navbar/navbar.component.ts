@@ -6,10 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent implements OnInit {
-
+  extendNav = false;
   constructor() { }
-
   ngOnInit(): void {
   }
 
+  toggle() {
+    this.extendNav = !this.extendNav;
+    console.log("extending nav?", this.extendNav)
+  }
 }
