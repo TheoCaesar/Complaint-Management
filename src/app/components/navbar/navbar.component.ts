@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-navbar',
@@ -6,13 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent implements OnInit {
-  extendNav = false;
+  @Input() extendNav = false;
   constructor() { }
   ngOnInit(): void {
   }
 
-  toggle() {
-    this.extendNav = !this.extendNav;
-    console.log("extending nav?", this.extendNav)
-  }
 }
