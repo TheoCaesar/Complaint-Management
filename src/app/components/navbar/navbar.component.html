@@ -1,48 +1,52 @@
 <!-- <p>navbar works!</p> -->
-<div class="container" (mouseover)="toggle()" (mouseleave)="toggle()">
+<div class="container">
   <div class="top">
     <div class="nav-links">
       <div class="nav-link">
-        <div class="icons" >
-          <img src="../../../favicon.ico" width="40px" alt="icon">
+        <div class="icons">
+          <img src="../../../assets/dash/dashboard-icon.svg" width="30px" alt="icon">
         </div>
-        <div class="icons-ext" [ngClass]="{extended: extendNav}">
-          <p>home</p>
+        <div [ngClass]="extendNav ? 'icon-info-ext' : 'iocn-info-shrink'"class="icons-ext">
+          <p>Dashboard</p>
+        </div>
+      </div>
+      <div class="nav-link">
+        <div class="icons"  >
+          <i class="fa fa-list maximize"></i>
+        </div>
+        <div class="icons-ext">
+          <p>Complaints</p>
           <p>&gtcir;</p>
         </div>
       </div>
       <div class="nav-link">
         <div class="icons">
-          <img src="../../../favicon.ico" width="40px" alt="icon">
+          <i class="fa fa-users maximize"></i>
         </div>
         <div class="icons-ext">
-          <p>home</p>
+          <p>Employees</p>
         </div>
-      </div><div class="nav-link">
+      </div>
+      <div class="nav-link">
         <div class="icons">
-          <img src="../../../favicon.ico" width="40px" alt="icon">
+          <i class="fa fa-th maximize"></i>
         </div>
         <div class="icons-ext">
-          <p>home</p>
-        </div>
-      </div><div class="nav-link">
-        <div class="icons">
-          <img src="../../../favicon.ico" width="40px" alt="icon">
-        </div>
-        <div class="icons-ext">
-          <p>home</p>
+          <p>Departments</p>
         </div>
       </div>
 
     </div>
   </div>
   <div class="bottom">
+    <div class="nav-links">
       <div class="nav-link">
-      <div class="icons">
-        <img src="../../../favicon.ico" width="40px" alt="icon">
-      </div>
-      <div class="icons-ext">
-        <p>profile</p>
+        <div class="icons">
+          <i class="fa fa-user-circle-o maximize"></i>
+        </div>
+        <div class="icons-ext">
+          <p>profile</p>
+        </div>
       </div>
     </div>
   </div>
