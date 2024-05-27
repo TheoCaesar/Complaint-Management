@@ -1,4 +1,77 @@
 {
+  "categories": [
+    {
+      "id":1,
+      "name": "service request",
+      "iconUrl": "./src/assets/padlock-icon.svg"
+    },
+    {
+      "id":2,
+      "name": "office space",
+      "iconUrl": "./src/assets/padlock-icon.svg"
+    },
+    {
+      "id":3,
+      "name": "employee relations",
+      "iconUrl": "./src/assets/padlock-icon.svg"
+    },
+    {
+      "id":4,
+      "name": "other",
+      "iconUrl": "./src/assets/padlock-icon.svg"
+    }
+  ],
+  "priorities": [
+    {
+      "id":1,
+      "name": "low",
+      "iconUrl":"./src/assets/padlock-icon.svg"
+    },
+    {
+      "id":2,
+      "name": "moderate",
+      "iconUrl":"./src/assets/padlock-icon.svg"
+    },
+    {
+      "id":3,
+      "name": "high",
+      "iconUrl":"./src/assets/padlock-icon.svg"
+    },
+    {
+      "id":4,
+      "name": "critical",
+      "iconUrl":"./src/assets/padlock-icon.svg"
+    }
+  ],
+
+  "status": [
+    {
+      "id":1,
+      "name": "new",
+      "iconUrl":"./src/assets/padlock-icon.svg"
+    },
+    {
+      "id":2,
+      "name": "open",
+      "iconUrl":"./src/assets/padlock-icon.svg"
+    },
+    {
+      "id":3,
+      "name": "in progress",
+      "iconUrl":"./src/assets/padlock-icon.svg"
+    },
+    {
+      "id":4,
+      "name": "closed",
+      "iconUrl":"./src/assets/padlock-icon.svg"
+    },
+    {
+      "id":5,
+      "name": "overdue",
+      "iconUrl":"./src/assets/padlock-icon.svg"
+    }
+  ],
+
   "users": [
     {
       "staffId": "A2402012",
@@ -23,6 +96,7 @@
       "endDate": "12/31/2024"
     }
   ],
+
   "complaints": [
     {
       "reporter": "Jurgen",

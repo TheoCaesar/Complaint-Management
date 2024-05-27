@@ -1,1 +1,58 @@
-<p>dashboard works!</p>
+<!-- <p>dashboard works!</p> -->
+<div class = " container">
+  <div class="sidebar">
+    <app-navbar></app-navbar>
+  </div>
+  <div class="content">
+    <div class="cards">
+      <div class="card" *ngFor="let status of statuses">
+        <div class="card-details">
+          <div class="icon">
+            <img src="./../../../assets/padlock-icon.svg" width="40px" alt="icon">
+          </div>
+          <div class="info">
+            <p>{{status.name}}</p>
+          </div>
+        </div>
+        <div class="count">
+          <p>{{status.count}}</p>
+        </div>
+      </div>
+
+    </div>
+    <div class="tab">
+      <div class="left"></div>
+      <div class="right">
+        <div class="categories">
+          <h3>Complaint status</h3>
+          <div class="category-card" *ngFor="let category of categories">
+            <div class="category-details">
+              <div class="icon">
+                <img src="./../../../assets/padlock-icon.svg" width="40px" alt="icon">
+              </div>
+              <div class="info">
+                <p>{{category.name}}</p>
+              </div>
+            </div>
+            <div class="count">
+              <p>{{category.count}}</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="responses">
+          <h3>Response Mode</h3>
+          <div class="response-card" *ngFor="let response of responses">
+            <div class="response-details">
+              <div class="icon">
+                <img src="./../../../assets/padlock-icon.svg" width="40px" alt="icon">
+              </div>
+              <div class="info">{{response.name}}</div>
+            </div>
+            <div class="count">{{response.count}}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
