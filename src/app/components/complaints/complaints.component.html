@@ -1,1 +1,84 @@
-<p>complaints works!</p>
+<!-- <p>complaints works!</p> -->
+<div class="container">
+  <div class="content">
+    <div class="new-complaint-tab" (click)="togglePopup()">
+    <p>Add a complaint</p>
+    </div>
+    <div class="card" *ngFor="let complaint of data; let i = index">
+      <h3>{{complaint.subject}}</h3>
+      <p>Reporter: {{complaint.reporter}}</p>
+      <p>
+        {{complaint.description | sliceText:200 }}
+        <span>Read more</span>
+      </p>
+      <p>{{complaint.complaintDate | date:'short'}}</p>
+      <div class="icons">
+        <i class="fa fa-pencil maximize" (click)="togglePopup()"></i>
+        <i class="fa fa-trash maximize"></i>
+      </div>
+    </div>
+
+    <div class="form-container" id="myPopUpForm" [ngClass]="{'show': showPopupForm}" class="popup">
+      <div class="popup-content">
+        <div class="close-btn" (click)="togglePopup()">
+          <i class="fa fa-close maximize"></i>
+        </div>
+        <form >
+          <div>
+            <p>Subject:</p>
+            <input type="text">
+          </div>
+          <div>
+            <p>Description:</p>
+            <input type="text">
+          </div>
+          <div>
+            <p>Evidence:</p>
+            <input type="text">
+          </div>
+          <div>
+            <p>Witness:</p>
+            <input type="text">
+          </div>
+          <div>
+            <p>Previous Complaint:</p>
+            <input type="text">
+          </div>
+          <div>
+            <p>reference number:</p>
+            <input type="text">
+          </div>
+          <div>
+            <p>Desired Outcome:</p>
+            <input type="text">
+          </div>
+          <div>
+            <p>Other Outcome:</p>
+            <input type="text">
+          </div>
+          <div>
+            <p>Preferred mode of Contact:</p>
+            <input type="text">
+          </div>
+          <div>
+            <p>Additional Information:</p>
+            <input type="text">
+          </div>
+          <div>
+            <p>reference number:</p>
+            <input type="text">
+          </div>
+          <div>
+            <p>status:</p>
+            <input type="text">
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- <div class="pagination" *ngIf="urlPath.includes('complaint')"> -->
+    <div class="pagination" *ngIf="totalItems">
+    <app-pagination [getTotalItems] = totalItems (clickedPage) = onGetComplaintsData($event)></app-pagination>
+  </div>
+</div>
+

@@ -1,0 +1,15 @@
+<div>
+  <nav>
+    <ul class="pagination">
+      <li class="page-item" [ngClass]="{'disabled': currentPage ==1}">
+        <a class="page-link" (click)="onPageChange(currentPage - 1)"> Prev</a>
+      </li>
+      <li class="page-item" [class.active]="currentPage === page" *ngFor="let page of pageTabs">
+        <a class="page-link page-tab" (click)="onPageChange(page)">{{ page }}</a>
+      </li>
+      <li class="page-item" [class.disabled]="currentPage === totalPages">
+        <a class="page-link" (click)="onPageChange(currentPage + 1)">Next</a>
+      </li>
+    </ul>
+  </nav>
+</div>
