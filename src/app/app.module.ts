@@ -9,6 +9,8 @@ import { AuthModule } from './modules/auth/auth.module';
 import { HomeComponent } from './components/home/home.component';
 import { ComplaintsModule } from './components/complaints/complaints.module';
 import { UtilsModule } from './utils/utils.module';
+import { ToastrModule } from 'ngx-toastr';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations'
 
 @NgModule({
   declarations: [
@@ -18,8 +20,10 @@ import { UtilsModule } from './utils/utils.module';
     HomeComponent
   ],
   imports: [
+    BrowserAnimationsModule,
+    ToastrModule.forRoot(),
     BrowserModule, AuthModule, ComplaintsModule, AppRoutingModule,
-    HttpClientModule,UtilsModule
+    HttpClientModule,UtilsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
