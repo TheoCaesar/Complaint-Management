@@ -5,6 +5,7 @@
 .nav {
   border: 2px solid brown;
   width: 70px;
+  height: 100vh;
 }
 
 .extend-sidebar {
@@ -31,4 +32,6 @@ i.maximize {
 
 .page {
   flex: 1;
+  height: 100vh;
+  overflow-y: scroll;
 }
