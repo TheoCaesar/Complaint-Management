@@ -20,4 +20,23 @@ export class ComplaintsServiceService {
     return this.http.get<Complaint[]>(`${environment.apiUrl}${environment.apiEndpoints.complaints}`);
   }
 
+
+  //save new complaint
+  postComplaint(complaint:Complaint){
+    return this.http.post(`${environment.apiUrl}${environment.apiEndpoints.complaints}`, complaint)
+  }
+
+  //get complaint instance
+  getComplaint(id:number | string):Observable<Complaint>{
+    return this.http.get<Complaint>(`${environment.apiUrl}${environment.apiEndpoints.complaints}/${id}`)
+  }
+
+ //update complaint instance
+  putComplaint(id: number | string, complaint:Complaint): Observable<Complaint> {
+    return this.http.put<Complaint>(`${environment.apiUrl}${environment.apiEndpoints.complaints}/${id}`, complaint)
+  }
+
+  deleteComplaint(id:number | string):Observable<Complaint>{
+    return this.http.delete<Complaint>(`${environment.apiUrl}${environment.apiEndpoints.complaints}/${id}`)
+  }
 }

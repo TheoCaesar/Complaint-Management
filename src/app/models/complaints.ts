@@ -20,7 +20,7 @@ export interface Status {
 
 export interface Complaint {
   reporter: User | string;
-  complaintID: string;
+  id: number;
   complaintDate: string | Date;
   incidentDate: string | Date;
   category: Category | string;

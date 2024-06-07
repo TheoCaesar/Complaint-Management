@@ -1,16 +1,39 @@
 .container {
   border: 2px solid red;
-  /* height: 100%; */
+  max-height: 100%;
   margin: 10px;
   padding: 10px;
   display: flex;
   flex-direction: column;
 }
 
+.page {
+  border: 2px solid blueviolet;
+}
+
+.tabs {
+  border:2px solid red;
+  width: 98.5%;
+  margin: 10px;
+  /* padding: 0 10px; */
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.tab {
+  width: 200px;
+  border: 2px solid blue;
+  margin-left: 15px;
+  height: 80%;
+}
+
 .content {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: flex-start;
+  overflow-y: scroll;
 }
 
 .card {
@@ -47,10 +70,12 @@
   top: 15;
   right: 20px;
   border: 2px solid red;
+  z-index: 10;
 }
 
 
 .popup {
+  border: 2px solid greenyellow;
   position: fixed;
   z-index: 1;
   left: 0;
@@ -69,6 +94,15 @@
   width: 60%;
   font-weight: bolder;
 }
+
+.popup-content div {
+  margin-block: 7px;
+}
+
+.popup-content div input , div textarea {
+  width: 90%;
+}
+
 .close-btn {
   position: relative;
   top: 0;
@@ -78,6 +112,11 @@
   float: right;
   clear: both;
 }
+
 .show {
   display: block;
+}
+
+.pagination {
+  flex: 1;
 }
