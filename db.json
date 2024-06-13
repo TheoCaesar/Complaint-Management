@@ -47,41 +47,52 @@
     {
       "id": 1,
       "name": "new",
-      "iconUrl": "./src/assets/padlock-icon.svg"
+      "iconUrl": "../../../assets/new.svg"
     },
     {
       "id": 2,
       "name": "open",
-      "iconUrl": "./src/assets/padlock-icon.svg"
+      "iconUrl": "../../../assets/open.svg"
     },
     {
       "id": 3,
       "name": "in progress",
-      "iconUrl": "./src/assets/padlock-icon.svg"
+      "iconUrl": "../../../assets/in-progress.svg"
     },
     {
       "id": 4,
       "name": "closed",
-      "iconUrl": "./src/assets/padlock-icon.svg"
+      "iconUrl": "../../../assets/closed.svg"
     },
     {
       "id": 5,
       "name": "overdue",
-      "iconUrl": "./src/assets/padlock-icon.svg"
+      "iconUrl": "../../../assets/overdue.svg"
+    },
+    {
+      "id": 6,
+      "name": "modified",
+      "iconUrl":"../../../assets/edit.svg"
+    },
+    {
+      "id":7,
+      "name": "deleted",
+      "iconUrl":"../../../assets/delete.svg"
     }
   ],
   "users": [
     {
-      "staffId": "A2402012",
+      "id": 1,
+      "staffId": 2302345,
       "name": {
         "firstname": "Jurgen",
         "otherNames": "Obiba",
-        "lastname": "Klopp"
+        "surname": "Klopp"
       },
       "gender": "M",
       "dob": "7/28/98",
       "contactInfo": {
-        "phone": "597412563",
+        "phone": "200147852",
         "email": "jurgenobiba.klopp@solv.com.gh",
         "address": "Kasoa"
       },
@@ -91,18 +102,295 @@
       "employmentStatus": "active",
       "salary": 2500,
       "startDate": "2/24/2024",
-      "endDate": "12/31/2024"
+      "endDate": "12/31/2024",
+      "code": "Montran#1",
+      "role": "admin"
+    },
+    {
+      "id": 2,
+      "staffId": 23042523,
+      "name": {
+        "firstname": "Jurgen",
+        "otherNames": "Obiba",
+        "surname": "Klopp"
+      },
+      "gender": "M",
+      "dob": "7/28/98",
+      "contactInfo": {
+        "phone": "266458120",
+        "email": "jurgenobiba.klopp@solv.com.gh",
+        "address": "Kasoa"
+      },
+      "jobTitle": "client service analyst",
+      "department": "Sales",
+      "staffType": "contract",
+      "employmentStatus": "active",
+      "salary": 2500,
+      "startDate": "6/1/2022",
+      "endDate": "12/31/2024",
+      "code": "Montran#2",
+      "role": "user"
+    },
+    {
+      "id": 3,
+      "staffId": 23071220,
+      "name": {
+        "firstname": "Joseph",
+        "otherNames": "",
+        "surname": "Gyamfi"
+      },
+      "gender": "M",
+      "dob": "7/28/98",
+      "contactInfo": {
+        "phone": "243657891",
+        "email": "joseph.gyamfi@solv.com.gh",
+        "address": "Kasoa"
+      },
+      "jobTitle": "client service analyst",
+      "department": "Sales",
+      "staffType": "contract",
+      "employmentStatus": "active",
+      "salary": 2500,
+      "startDate": "6/1/2022",
+      "endDate": "12/31/2024",
+      "code": "Montran#3",
+      "role": "user"
+    },
+    {
+      "id": 4,
+      "staffId": 24022002,
+      "name": {
+        "firstname": "Richeal",
+        "otherNames": "Sefakor",
+        "surname": "Glago"
+      },
+      "gender": "M",
+      "dob": "8/15/99",
+      "contactInfo": {
+        "phone": "241578963",
+        "email": "richealsefakor.glago@solv.com.gh",
+        "address": "Borteyman"
+      },
+      "jobTitle": "client service analyst",
+      "department": "Sales",
+      "staffType": "contract",
+      "employmentStatus": "active",
+      "salary": 2500,
+      "startDate": "6/1/2022",
+      "endDate": "12/31/2024",
+      "code": "Montran#4",
+      "role": "user"
+    },
+    {
+      "id": 5,
+      "staffId": 2309009,
+      "name": {
+        "firstname": "Alexander",
+        "otherNames": "Kwame",
+        "surname": "Koomson"
+      },
+      "gender": "M",
+      "dob": "7/28/98",
+      "contactInfo": {
+        "phone": "598741478",
+        "email": "alexander.koomson@solv.com.gh",
+        "address": "Kasoa"
+      },
+      "jobTitle": "Backend Developer",
+      "department": "IT",
+      "staffType": "full time",
+      "employmentStatus": "active",
+      "salary": 18500,
+      "startDate": "9/9/2024",
+      "endDate": "n/a",
+      "code": "sPring23#",
+      "role": "user"
+    },
+    {
+      "id": 6,
+      "staffId": 2311011,
+      "name": {
+        "firstname": "Kwame",
+        "otherNames": "",
+        "surname": "Gyimah"
+      },
+      "gender": "M",
+      "dob": "7/28/98",
+      "contactInfo": {
+        "phone": "554178963",
+        "email": "kwame.gyimah@solv.com.gh",
+        "address": "North Legon"
+      },
+      "jobTitle": "Backend Developer",
+      "department": "IT",
+      "staffType": "full time",
+      "employmentStatus": "active",
+      "salary": 22500,
+      "startDate": "11/11/2024",
+      "endDate": "n/a",
+      "code": "sPring24#",
+      "role": "user"
+    },
+    {
+      "id": 7,
+      "staffId": 2309009,
+      "name": {
+        "firstname": "Emmanuel",
+        "otherNames": "",
+        "surname": "Bonsu"
+      },
+      "gender": "M",
+      "dob": "6/4/95",
+      "contactInfo": {
+        "phone": "247158745",
+        "email": "emmanuel.bonsu@solv.com.gh",
+        "address": "Taifa"
+      },
+      "jobTitle": "Frontend Developer",
+      "department": "IT",
+      "staffType": "full time",
+      "employmentStatus": "active",
+      "salary": 15500,
+      "startDate": "5/23/2024",
+      "endDate": "n/a",
+      "code": "AngularV12#",
+      "role": "user"
+    },
+    {
+      "id": 8,
+      "staffId": 2305019,
+      "name": {
+        "firstname": "Felix",
+        "otherNames": "Nana",
+        "surname": "Nyarko"
+      },
+      "gender": "M",
+      "dob": "10/14/94",
+      "contactInfo": {
+        "phone": "546874512",
+        "email": "nana.nyarko@solv.com.gh",
+        "address": "Kasoa"
+      },
+      "jobTitle": "UI/UX Designer",
+      "department": "IT",
+      "staffType": "full time",
+      "employmentStatus": "active",
+      "salary": 15000,
+      "startDate": "5/23/2024",
+      "endDate": "n/a",
+      "code": "Figma>23",
+      "role": "user"
+    },
+    {
+      "id": 9,
+      "staffId": 2309009,
+      "name": {
+        "firstname": "David",
+        "otherNames": "",
+        "surname": "Achiampong"
+      },
+      "gender": "M",
+      "dob": "7/28/92",
+      "contactInfo": {
+        "phone": "548796587",
+        "email": "david.achiampong@solv.com.gh",
+        "address": "Kasoa"
+      },
+      "jobTitle": "Android Developer",
+      "department": "IT",
+      "staffType": "full time",
+      "employmentStatus": "active",
+      "salary": 25000,
+      "startDate": "9/11/2024",
+      "endDate": "n/a",
+      "code": "Kotlin3#",
+      "role": "user"
+    },
+    {
+      "id": 10,
+      "staffId": "Temp001",
+      "name": {
+        "firstname": "Hannah",
+        "otherNames": "",
+        "surname": "Arthur"
+      },
+      "gender": "F",
+      "dob": "7/28/01",
+      "contactInfo": {
+        "phone": "548796587",
+        "email": "hannah.arthur@solv.com.gh",
+        "address": "Ashaiman"
+      },
+      "jobTitle": "Social Media Cordinator",
+      "department": "Sales",
+      "staffType": "nsp",
+      "employmentStatus": "active",
+      "salary": 1500,
+      "startDate": "15/10/2023",
+      "endDate": "15/10/2024",
+      "code": "SCBsolv#1",
+      "role": "user"
+    },
+    {
+      "id": 10,
+      "staffId": "Temp002",
+      "name": {
+        "firstname": "Pat",
+        "otherNames": "",
+        "surname": "Walker"
+      },
+      "gender": "F",
+      "dob": "9/8/01",
+      "contactInfo": {
+        "phone": "548796587",
+        "email": "pat.walker@solv.com.gh",
+        "address": "Dansoman"
+      },
+      "jobTitle": "Social Media Cordinator",
+      "department": "Sales",
+      "staffType": "nsp",
+      "employmentStatus": "active",
+      "salary": 1500,
+      "startDate": "15/10/2023",
+      "endDate": "15/10/2024",
+      "code": "SCBsolv#1",
+      "role": "user"
+    },
+    {
+      "id": 11,
+      "staffId": "Temp003",
+      "name": {
+        "firstname": "Amina",
+        "otherNames": "",
+        "surname": "Hafiz"
+      },
+      "gender": "F",
+      "dob": "10/5/03",
+      "contactInfo": {
+        "phone": "200158741",
+        "email": "amina.hafiz@solv.com.gh",
+        "address": "Madina"
+      },
+      "jobTitle": "Social Media Cordinator",
+      "department": "Sales",
+      "staffType": "intern",
+      "employmentStatus": "active",
+      "salary": 1500,
+      "startDate": "15/10/2023",
+      "endDate": "15/10/2024",
+      "code": "SCBsolv#1",
+      "role": "user"
     }
   ],
   "complaints": [
     {
       "reporter": "Jurgen Klopp",
-      "complaintID": "abc10024",
+      "id": "abc10024",
       "complaintDate": "5/18/24",
       "incidentDate": "4/22/24",
       "category": "conflicts",
       "priority": "moderate",
-      "subject": "Cross team dysfunction",
+      "subject": "Cross-team dysfunction",
       "description": "theres been unusual conflicts between team members in the last sprint; even to the point of it affecting team performance",
       "witness": "thomas",
       "previousComplaint": false,
@@ -111,14 +399,17 @@
       "preferredContactMethod": "email",
       "additionalInfo": "",
       "turnaroundTime": 2,
-      "status": "new"
+      "status": "new",
+      "evidence": null,
+      "referenceNumber": null,
+      "contactMethod": "email"
     },
     {
       "reporter": "Jim Jones",
-      "complaintID": "052510",
+      "id": "052510",
       "complaintDate": "2024-05-27T11:30:56.193",
       "incidentDate": "2024-05-27T11:30:56.193",
-      "category": "closed",
+      "status": "closed",
       "priority": "low",
       "subject": "Petty Theft",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident tempora commodi, sapiente exercitationem facere necessitatibus quod repellendus a corporis velit expedita, nesciunt fuga. Beatae blanditiis, recusandae sunt quas aliquam dolores?",
@@ -129,19 +420,20 @@
       "desiredOutcome": "escalate",
       "otherOutcome": "",
       "preferredContactMethod": "phone",
-      "additionalInfo": "",
+      "additionalInfo": "please be prompt in resolving this",
       "turnaroundTime": 2,
-      "status": "office matters",
-      "solution": ""
+      "category": "office matters",
+      "solution": "",
+      "contactMethod": "phone"
     },
     {
       "reporter": "Jack Robins",
-      "complaintID": "052511",
+      "id": "052511",
       "complaintDate": "2024-05-27T11:30:56.193",
       "incidentDate": "2024-05-26T11:30:56.193",
-      "category": "open",
+      "status": "open",
       "priority": "critical",
-      "subject": "Absenteeism",
+      "subject": "Absenteeism by staff",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident tempora commodi, sapiente exercitationem facere necessitatibus quod repellendus a corporis velit expedita, nesciunt fuga. Beatae blanditiis, recusandae sunt quas aliquam dolores?",
       "evidence": [],
       "witness": "will",
@@ -152,15 +444,16 @@
       "preferredContactMethod": "phone",
       "additionalInfo": "",
       "turnaroundTime": 2,
-      "status": "employee relations",
-      "solution": ""
+      "category": "employee relations",
+      "solution": "",
+      "contactMethod": "phone"
     },
     {
       "reporter": "Ella Acquah",
-      "complaintID": "052512",
+      "id": "052512",
       "complaintDate": "2024-05-27T11:30:56.193",
       "incidentDate": "2024-05-25T11:30:56.193",
-      "category": "overdue",
+      "status": "overdue",
       "priority": "critical",
       "subject": "Lateness to work",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident tempora commodi, sapiente exercitationem facere necessitatibus quod repellendus a corporis velit expedita, nesciunt fuga. Beatae blanditiis, recusandae sunt quas aliquam dolores?",
@@ -173,15 +466,15 @@
       "preferredContactMethod": "phone",
       "additionalInfo": "",
       "turnaroundTime": 2,
-      "status": "other",
+      "category": "other",
       "solution": ""
     },
     {
       "reporter": "fred amugi",
-      "complaintID": "052513",
+      "id": "052513",
       "complaintDate": "2024-05-27T11:30:56.193",
       "incidentDate": "2024-05-24T11:30:56.193",
-      "category": "new",
+      "status": "new",
       "priority": "low",
       "subject": "Request for Maternal Leave",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident tempora commodi, sapiente exercitationem facere necessitatibus quod repellendus a corporis velit expedita, nesciunt fuga. Beatae blanditiis, recusandae sunt quas aliquam dolores?",
@@ -194,15 +487,16 @@
       "preferredContactMethod": "phone",
       "additionalInfo": "",
       "turnaroundTime": 2,
-      "status": "service request",
-      "solution": ""
+      "category": "service request",
+      "solution": "",
+      "contactMethod": "email"
     },
     {
       "reporter": "rick morton",
-      "complaintID": "052514",
+      "id": "052514",
       "complaintDate": "2024-05-27T11:30:56.193",
       "incidentDate": "2024-05-23T11:30:56.193",
-      "category": "closed",
+      "status": "closed",
       "priority": "high",
       "subject": "Expense Reimbursement",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident tempora commodi, sapiente exercitationem facere necessitatibus quod repellendus a corporis velit expedita, nesciunt fuga. Beatae blanditiis, recusandae sunt quas aliquam dolores?",
@@ -215,15 +509,15 @@
       "preferredContactMethod": "phone",
       "additionalInfo": "",
       "turnaroundTime": 2,
-      "status": "office matters",
+      "category": "office matters",
       "solution": ""
     },
     {
       "reporter": "anita erskine",
-      "complaintID": "052515",
+      "id": "052515",
       "complaintDate": "2024-05-27T11:30:56.193",
       "incidentDate": "2024-05-22T11:30:56.193",
-      "category": "new",
+      "status": "new",
       "priority": "critical",
       "subject": "Sexual Harassment",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident tempora commodi, sapiente exercitationem facere necessitatibus quod repellendus a corporis velit expedita, nesciunt fuga. Beatae blanditiis, recusandae sunt quas aliquam dolores?",
@@ -236,15 +530,15 @@
       "preferredContactMethod": "phone",
       "additionalInfo": "",
       "turnaroundTime": 2,
-      "status": "employee relations",
+      "category": "employee relations",
       "solution": ""
     },
     {
       "reporter": "abena moet",
-      "complaintID": "052516",
+      "id": "052516",
       "complaintDate": "2024-05-27T11:30:56.193",
       "incidentDate": "2024-05-21T11:30:56.193",
-      "category": "in-progress",
+      "status": "in progress",
       "priority": "high",
       "subject": "Work from Home challenges",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident tempora commodi, sapiente exercitationem facere necessitatibus quod repellendus a corporis velit expedita, nesciunt fuga. Beatae blanditiis, recusandae sunt quas aliquam dolores?",
@@ -257,15 +551,15 @@
       "preferredContactMethod": "phone",
       "additionalInfo": "",
       "turnaroundTime": 2,
-      "status": "office matters",
+      "category": "office matters",
       "solution": ""
     },
     {
       "reporter": "jack hardy",
-      "complaintID": "052517",
+      "id": "052517",
       "complaintDate": "2024-05-27T11:30:56.193",
       "incidentDate": "2024-05-20T11:30:56.193",
-      "category": "overdue",
+      "status": "overdue",
       "priority": "moderate",
       "subject": "Overwhelming workload",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident tempora commodi, sapiente exercitationem facere necessitatibus quod repellendus a corporis velit expedita, nesciunt fuga. Beatae blanditiis, recusandae sunt quas aliquam dolores?",
@@ -278,15 +572,15 @@
       "preferredContactMethod": "phone",
       "additionalInfo": "",
       "turnaroundTime": 2,
-      "status": "service request",
+      "category": "service request",
       "solution": ""
     },
     {
       "reporter": "rick johnson",
-      "complaintID": "052518",
+      "id": "052518",
       "complaintDate": "2024-05-27T11:30:56.193",
       "incidentDate": "2024-05-19T11:30:56.193",
-      "category": "open",
+      "status": "open",
       "priority": "low",
       "subject": "Workplace Safety and Security",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident tempora commodi, sapiente exercitationem facere necessitatibus quod repellendus a corporis velit expedita, nesciunt fuga. Beatae blanditiis, recusandae sunt quas aliquam dolores?",
@@ -299,15 +593,15 @@
       "preferredContactMethod": "phone",
       "additionalInfo": "",
       "turnaroundTime": 2,
-      "status": "other",
+      "category": "other",
       "solution": ""
     },
     {
       "reporter": "yaa turkson",
-      "complaintID": "052519",
+      "id": "052519",
       "complaintDate": "2024-05-27T11:30:56.193",
       "incidentDate": "2024-05-18T11:30:56.193",
-      "category": "overdue",
+      "status": "overdue",
       "priority": "low",
       "subject": "Team Leader issues",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident tempora commodi, sapiente exercitationem facere necessitatibus quod repellendus a corporis velit expedita, nesciunt fuga. Beatae blanditiis, recusandae sunt quas aliquam dolores?",
@@ -320,15 +614,15 @@
       "preferredContactMethod": "phone",
       "additionalInfo": "",
       "turnaroundTime": 2,
-      "status": "office matters",
+      "category": "office matters",
       "solution": ""
     },
     {
       "reporter": "naa nuerkie",
-      "complaintID": "0525110",
+      "id": "0525110",
       "complaintDate": "2024-05-27T11:30:56.193",
       "incidentDate": "2024-05-17T11:30:56.193",
-      "category": "closed",
+      "status": "closed",
       "priority": "critical",
       "subject": "Hygeine at the Office",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident tempora commodi, sapiente exercitationem facere necessitatibus quod repellendus a corporis velit expedita, nesciunt fuga. Beatae blanditiis, recusandae sunt quas aliquam dolores?",
@@ -341,15 +635,15 @@
       "preferredContactMethod": "phone",
       "additionalInfo": "",
       "turnaroundTime": 2,
-      "status": "service request",
+      "category": "service request",
       "solution": ""
     },
     {
       "reporter": "jay jackson",
-      "complaintID": "0525111",
+      "id": "0525111",
       "complaintDate": "2024-05-27T11:30:56.193",
       "incidentDate": "2024-05-16T11:30:56.193",
-      "category": "overdue",
+      "status": "overdue",
       "priority": "low",
       "subject": "Workplace Safety",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident tempora commodi, sapiente exercitationem facere necessitatibus quod repellendus a corporis velit expedita, nesciunt fuga. Beatae blanditiis, recusandae sunt quas aliquam dolores?",
@@ -362,15 +656,15 @@
       "preferredContactMethod": "phone",
       "additionalInfo": "",
       "turnaroundTime": 2,
-      "status": "service request",
+      "category": "service request",
       "solution": ""
     },
     {
       "reporter": "eben attafuah",
-      "complaintID": "0525112",
+      "id": "0525112",
       "complaintDate": "2024-05-27T11:30:56.193",
       "incidentDate": "2024-05-15T11:30:56.193",
-      "category": "overdue",
+      "status": "overdue",
       "priority": "low",
       "subject": "network Challenges",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident tempora commodi, sapiente exercitationem facere necessitatibus quod repellendus a corporis velit expedita, nesciunt fuga. Beatae blanditiis, recusandae sunt quas aliquam dolores?",
@@ -383,15 +677,15 @@
       "preferredContactMethod": "phone",
       "additionalInfo": "",
       "turnaroundTime": 2,
-      "status": "other",
+      "category": "other",
       "solution": ""
     },
     {
       "reporter": "Freddy Blay",
-      "complaintID": "0525113",
+      "id": "0525113",
       "complaintDate": "2024-05-27T11:30:56.193",
       "incidentDate": "2024-05-14T11:30:56.193",
-      "category": "in-progress",
+      "status": "in progress",
       "priority": "moderate",
       "subject": "Health Insurance",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident tempora commodi, sapiente exercitationem facere necessitatibus quod repellendus a corporis velit expedita, nesciunt fuga. Beatae blanditiis, recusandae sunt quas aliquam dolores?",
@@ -404,15 +698,15 @@
       "preferredContactMethod": "phone",
       "additionalInfo": "",
       "turnaroundTime": 2,
-      "status": "employee relations",
+      "category": "employee relations",
       "solution": ""
     },
     {
       "reporter": "Paul Hardy",
-      "complaintID": "0525114",
+      "id": "0525114",
       "complaintDate": "2024-05-27T11:30:56.193",
       "incidentDate": "2024-05-13T11:30:56.193",
-      "category": "open",
+      "status": "open",
       "priority": "high",
       "subject": "Indecency at the Workplace",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident tempora commodi, sapiente exercitationem facere necessitatibus quod repellendus a corporis velit expedita, nesciunt fuga. Beatae blanditiis, recusandae sunt quas aliquam dolores?",
@@ -425,15 +719,15 @@
       "preferredContactMethod": "phone",
       "additionalInfo": "",
       "turnaroundTime": 2,
-      "status": "office matters",
+      "category": "office matters",
       "solution": ""
     },
     {
       "reporter": "will Smith",
-      "complaintID": "0525115",
+      "id": "0525115",
       "complaintDate": "2024-05-27T11:30:56.193",
       "incidentDate": "2024-05-12T11:30:56.193",
-      "category": "new",
+      "status": "new",
       "priority": "moderate",
       "subject": "Noise Complaint",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident tempora commodi, sapiente exercitationem facere necessitatibus quod repellendus a corporis velit expedita, nesciunt fuga. Beatae blanditiis, recusandae sunt quas aliquam dolores?",
@@ -446,15 +740,15 @@
       "preferredContactMethod": "phone",
       "additionalInfo": "",
       "turnaroundTime": 2,
-      "status": "employee relations",
+      "category": "employee relations",
       "solution": ""
     },
     {
       "reporter": "George Dame",
-      "complaintID": "0525116",
+      "id": "0525116",
       "complaintDate": "2024-05-27T11:30:56.193",
       "incidentDate": "2024-05-11T11:30:56.193",
-      "category": "in-progress",
+      "status": "in progress",
       "priority": "moderate",
       "subject": "Stolen Equipment",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident tempora commodi, sapiente exercitationem facere necessitatibus quod repellendus a corporis velit expedita, nesciunt fuga. Beatae blanditiis, recusandae sunt quas aliquam dolores?",
@@ -467,15 +761,15 @@
       "preferredContactMethod": "phone",
       "additionalInfo": "",
       "turnaroundTime": 2,
-      "status": "other",
+      "category": "other",
       "solution": ""
     },
     {
       "reporter": "willow smith",
-      "complaintID": "0525117",
+      "id": "0525117",
       "complaintDate": "2024-05-27T11:30:56.193",
       "incidentDate": "2024-05-10T11:30:56.193",
-      "category": "open",
+      "status": "open",
       "priority": "moderate",
       "subject": "Sexual Harassment",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident tempora commodi, sapiente exercitationem facere necessitatibus quod repellendus a corporis velit expedita, nesciunt fuga. Beatae blanditiis, recusandae sunt quas aliquam dolores?",
@@ -488,15 +782,15 @@
       "preferredContactMethod": "phone",
       "additionalInfo": "",
       "turnaroundTime": 2,
-      "status": "other",
+      "category": "other",
       "solution": ""
     },
     {
       "reporter": "adjo turkson",
-      "complaintID": "0525118",
+      "id": "0525118",
       "complaintDate": "2024-05-27T11:30:56.193",
       "incidentDate": "2024-05-09T11:30:56.193",
-      "category": "closed",
+      "status": "closed",
       "priority": "low",
       "subject": "Noise Complaint",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident tempora commodi, sapiente exercitationem facere necessitatibus quod repellendus a corporis velit expedita, nesciunt fuga. Beatae blanditiis, recusandae sunt quas aliquam dolores?",
@@ -509,15 +803,15 @@
       "preferredContactMethod": "phone",
       "additionalInfo": "",
       "turnaroundTime": 2,
-      "status": "office matters",
+      "category": "office matters",
       "solution": ""
     },
     {
       "reporter": "jerry john",
-      "complaintID": "0525119",
+      "id": "0525119",
       "complaintDate": "2024-05-27T11:30:56.193",
       "incidentDate": "2024-05-08T11:30:56.193",
-      "category": "closed",
+      "status": "closed",
       "priority": "high",
       "subject": "work-life balance",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident tempora commodi, sapiente exercitationem facere necessitatibus quod repellendus a corporis velit expedita, nesciunt fuga. Beatae blanditiis, recusandae sunt quas aliquam dolores?",
@@ -530,15 +824,15 @@
       "preferredContactMethod": "phone",
       "additionalInfo": "",
       "turnaroundTime": 2,
-      "status": "employee relations",
+      "category": "employee relations",
       "solution": ""
     },
     {
       "reporter": "Teddy Ross",
-      "complaintID": "0525120",
+      "id": "0525120",
       "complaintDate": "2024-05-27T11:30:56.193",
       "incidentDate": "2024-05-07T11:30:56.193",
-      "category": "new",
+      "status": "new",
       "priority": "high",
       "subject": "Overwhelming workload",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident tempora commodi, sapiente exercitationem facere necessitatibus quod repellendus a corporis velit expedita, nesciunt fuga. Beatae blanditiis, recusandae sunt quas aliquam dolores?",
@@ -551,15 +845,15 @@
       "preferredContactMethod": "phone",
       "additionalInfo": "",
       "turnaroundTime": 2,
-      "status": "employee relations",
+      "category": "employee relations",
       "solution": ""
     },
     {
       "reporter": "shatta michy",
-      "complaintID": "0525121",
+      "id": "0525121",
       "complaintDate": "2024-05-27T11:30:56.193",
       "incidentDate": "2024-05-06T11:30:56.193",
-      "category": "overdue",
+      "status": "overdue",
       "priority": "critical",
       "subject": "service request",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident tempora commodi, sapiente exercitationem facere necessitatibus quod repellendus a corporis velit expedita, nesciunt fuga. Beatae blanditiis, recusandae sunt quas aliquam dolores?",
@@ -572,15 +866,15 @@
       "preferredContactMethod": "phone",
       "additionalInfo": "",
       "turnaroundTime": 2,
-      "status": "office matters",
+      "category": "office matters",
       "solution": ""
     },
     {
       "reporter": "timothy werner",
-      "complaintID": "0525122",
+      "id": "0525122",
       "complaintDate": "2024-05-27T11:30:56.193",
       "incidentDate": "2024-05-05T11:30:56.193",
-      "category": "open",
+      "status": "open",
       "priority": "moderate",
       "subject": "dummy Complaint",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident tempora commodi, sapiente exercitationem facere necessitatibus quod repellendus a corporis velit expedita, nesciunt fuga. Beatae blanditiis, recusandae sunt quas aliquam dolores?",
@@ -593,15 +887,15 @@
       "preferredContactMethod": "phone",
       "additionalInfo": "",
       "turnaroundTime": 2,
-      "status": "office matters",
+      "category": "office matters",
       "solution": ""
     },
     {
       "reporter": "akosua bella",
-      "complaintID": "0525123",
+      "id": "0525123",
       "complaintDate": "2024-05-27T11:30:56.193",
       "incidentDate": "2024-05-04T11:30:56.193",
-      "category": "closed",
+      "status": "closed",
       "priority": "high",
       "subject": "work-life balance",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident tempora commodi, sapiente exercitationem facere necessitatibus quod repellendus a corporis velit expedita, nesciunt fuga. Beatae blanditiis, recusandae sunt quas aliquam dolores?",
@@ -614,15 +908,15 @@
       "preferredContactMethod": "phone",
       "additionalInfo": "",
       "turnaroundTime": 2,
-      "status": "office matters",
+      "category": "office matters",
       "solution": ""
     },
     {
       "reporter": "naa atswei",
-      "complaintID": "0525124",
+      "id": "0525124",
       "complaintDate": "2024-05-27T11:30:56.193",
       "incidentDate": "2024-05-03T11:30:56.193",
-      "category": "new",
+      "status": "new",
       "priority": "critical",
       "subject": "Sexual Harassment",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident tempora commodi, sapiente exercitationem facere necessitatibus quod repellendus a corporis velit expedita, nesciunt fuga. Beatae blanditiis, recusandae sunt quas aliquam dolores?",
@@ -635,15 +929,15 @@
       "preferredContactMethod": "phone",
       "additionalInfo": "",
       "turnaroundTime": 2,
-      "status": "employee relations",
+      "category": "employee relations",
       "solution": ""
     },
     {
       "reporter": "bernard turkson",
-      "complaintID": "0525125",
+      "id": "0525125",
       "complaintDate": "2024-05-27T11:30:56.193",
       "incidentDate": "2024-05-02T11:30:56.193",
-      "category": "closed",
+      "status": "closed",
       "priority": "high",
       "subject": "Health Insurance",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident tempora commodi, sapiente exercitationem facere necessitatibus quod repellendus a corporis velit expedita, nesciunt fuga. Beatae blanditiis, recusandae sunt quas aliquam dolores?",
@@ -656,20 +950,20 @@
       "preferredContactMethod": "phone",
       "additionalInfo": "",
       "turnaroundTime": 2,
-      "status": "office matters",
+      "category": "office matters",
       "solution": ""
     },
     {
       "reporter": "bella agyeiwaa",
-      "complaintID": "0525126",
+      "id": "0525126",
       "complaintDate": "2024-05-27T11:30:56.193",
       "incidentDate": "2024-05-01T11:30:56.193",
-      "category": "new",
+      "status": "new",
       "priority": "high",
       "subject": "Sexual Harassment",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident tempora commodi, sapiente exercitationem facere necessitatibus quod repellendus a corporis velit expedita, nesciunt fuga. Beatae blanditiis, recusandae sunt quas aliquam dolores?",
       "evidence": [],
-      "witness": "ajo",
+      "witness": "adwoa foowaa",
       "previousComplaint": false,
       "referenceNumber": "",
       "desiredOutcome": "escalate",
@@ -677,15 +971,16 @@
       "preferredContactMethod": "phone",
       "additionalInfo": "",
       "turnaroundTime": 2,
-      "status": "employee relations",
-      "solution": ""
+      "category": "employee relations",
+      "solution": "",
+      "contactMethod": "phone"
     },
     {
       "reporter": "jackie robinson",
-      "complaintID": "0525127",
+      "id": "0525127",
       "complaintDate": "2024-05-27T11:30:56.193",
       "incidentDate": "2024-04-30T11:30:56.193",
-      "category": "open",
+      "status": "open",
       "priority": "low",
       "subject": "Workplace Safety",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident tempora commodi, sapiente exercitationem facere necessitatibus quod repellendus a corporis velit expedita, nesciunt fuga. Beatae blanditiis, recusandae sunt quas aliquam dolores?",
@@ -698,15 +993,16 @@
       "preferredContactMethod": "phone",
       "additionalInfo": "",
       "turnaroundTime": 2,
-      "status": "employee relations",
-      "solution": ""
+      "category": "employee relations",
+      "solution": "",
+      "contactMethod": "email"
     },
     {
       "reporter": "richie nixon",
-      "complaintID": "0525128",
+      "id": "0525128",
       "complaintDate": "2024-05-27T11:30:56.193",
       "incidentDate": "2024-04-29T11:30:56.193",
-      "category": "closed",
+      "status": "closed",
       "priority": "high",
       "subject": "Noise Complaint",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident tempora commodi, sapiente exercitationem facere necessitatibus quod repellendus a corporis velit expedita, nesciunt fuga. Beatae blanditiis, recusandae sunt quas aliquam dolores?",
@@ -719,8 +1015,50 @@
       "preferredContactMethod": "phone",
       "additionalInfo": "",
       "turnaroundTime": 2,
-      "status": "employee relations",
+      "category": "employee relations",
       "solution": ""
+    },
+    {
+      "id": 1717427318660,
+      "reporter": "john",
+      "complaintID": "Mon Jun 03 2024",
+      "incidentDate": 3,
+      "category": "service request",
+      "priority": "high",
+      "turnaroundTime": 30,
+      "status": "new",
+      "solution": "NA",
+      "subject": "Sanitation in the Office",
+      "description": "Restroom Cleanliness: The restrooms are frequently left in an unsanitary state, with overflowing trash bins, unclean floors, and empty soap dispensers. This poses a significant hygiene risk.\nKitchen and Break Area Maintenance: The kitchen and break areas often have dirty dishes left unwashed, spills that are not cleaned up promptly, and a general lack of cleanliness. This is concerning given that these are common areas where food is prepared and consumed.\nGeneral Office Cleanliness: The office areas, including desks and common areas, are not being cleaned regularly. Dust accumulation, unemptied trash cans, and unclean surfaces have become noticeable.\nThese issues impact employee comfort, morale, and productivity. A clean and well-maintained office is essential for a healthy and productive workforce.",
+      "evidence": "I have got a photo i will show to you",
+      "witness": "Pretty much every one in the office",
+      "previousComplaint": "none by me ",
+      "referenceNumber": "n/a",
+      "desiredOutcome": "swift action ",
+      "otherOutcome": "speak to HR",
+      "contactMethod": "phone",
+      "additionalInfo": "n/a"
+    },
+    {
+      "id": 1717491842939,
+      "reporter": "Jamila Mustafa",
+      "complaintID": "Tue Jun 04 2024",
+      "incidentDate": 4,
+      "category": "speak to HR",
+      "priority": "high",
+      "turnaroundTime": 30,
+      "solution": "NA",
+      "subject": "Sexual Harassment",
+      "description": "David held and yanked me tightly towards himself by my waist",
+      "evidence": "solomon has got a video of it happening",
+      "witness": "Solomon Mensah",
+      "previousComplaint": "n/a",
+      "referenceNumber": "n/a",
+      "desiredOutcome": "He should publicly apologise",
+      "otherOutcome": "his records should be updated with this complaint",
+      "contactMethod": "phone",
+      "additionalInfo": "none",
+      "status": "new"
     }
   ]
 }

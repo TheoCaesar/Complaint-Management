@@ -24,6 +24,8 @@ export class ComplaintsComponent implements OnInit {
   urlPath !: string;
   formAction :string = 'add';
   complaint !: Complaint ;
+  allComplaints !: Complaint[];
+  complaintStatuses !:any[];
 
   complaintForm =  new FormGroup({
     subject: new FormControl(''),
@@ -38,8 +40,8 @@ export class ComplaintsComponent implements OnInit {
     additionalInfo: new FormControl(""),
   })
 
-  constructor(private notification: ToastrService,
-    private complaintService:ComplaintsServiceService, 
+  constructor(private complaintStatusService:ComplaintStatusService,
+    private complaintService:ComplaintsServiceService,private notification: ToastrService,
     private route:ActivatedRoute, private router: Router
   ) {}
 
@@ -49,9 +51,36 @@ export class ComplaintsComponent implements OnInit {
       this.currentPage = +params['page'] || 1;
       this.itemsPerPage = +params['limit'] || 8;
       this.onGetComplaintsData(this.currentPage);
+      this.onGetComplaintStatus();
+      console.log(this.data)
     })
     this.urlPath = this.router.url;
   }
+
+
+
+  onGetComplaintStatus(){
+    this.complaintStatusService.getAllStatuses().subscribe({
+      next:(response) => {
+        this.complaintStatuses = response;
+      },
+      error: (err)=> this.notification.error('Something went wrong', 'Try again'),
+      complete:() => {
+        if (this.complaintStatuses) {
+          this.complaintService.getAllComplaints().subscribe( response => {
+            this.allComplaints = response;
+            this.complaintStatuses.forEach(
+              (status) => {
+                let complaintsByStatus = this.allComplaints.filter((complaint)=>complaint.status == status.name)
+                status.count = complaintsByStatus.length
+              }
+            )
+          })
+        }
+      }
+    })
+  }
+
 
   successNotification(){
     this.notification.success("Entry submitted successfully")
@@ -88,7 +117,6 @@ export class ComplaintsComponent implements OnInit {
       queryParamsHandling:'merge'
     })
   }
-
   //render complaint form popup
   togglePopup(type: string) {
     (type == 'form') ?

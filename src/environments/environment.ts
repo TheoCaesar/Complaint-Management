@@ -9,7 +9,8 @@ export const environment = {
     category: 'categories',
     department:'dept',
     employees:'staff',
-    complaints:'complaints'
+    complaints:'complaints',
+    status:'status'
   }
 };
 
