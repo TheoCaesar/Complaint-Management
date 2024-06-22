@@ -1,4 +1,8 @@
 <div>
+  <p>
+    <!-- showing {{(currentPage == 1) ? currentPage :  itemsPerPage + 1}} -    {{ (currentPage == 1) ? itemsPerPage : itemsPerPage  + 10}} of {{getTotalItems}} -->
+    showing {{startPoint}} - {{endPoint}} of {{getTotalItems}}
+  </p>
   <nav>
     <ul class="pagination">
       <li class="page-item" [ngClass]="{'disabled': currentPage ==1}">

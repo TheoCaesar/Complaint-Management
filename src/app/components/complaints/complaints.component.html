@@ -1,8 +1,12 @@
 <div class="container">
   <div class="page">
     <div class="tabs">
-      <div class="tab">
-
+      <div class="tab" *ngFor="let status of complaintStatuses">
+        <div>
+          <img src="{{status.iconUrl}} "alt="">
+          <p>{{status.name}}</p>
+        </div>
+        <p>{{status.count}}</p>
       </div>
     </div>
     <div class="content">

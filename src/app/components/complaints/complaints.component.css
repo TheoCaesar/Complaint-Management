@@ -15,18 +15,31 @@
   border:2px solid red;
   width: 98.5%;
   margin: 10px;
-  /* padding: 0 10px; */
-  height: 200px;
+  padding:10px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  overflow-x: scroll;
 }
 
 .tab {
-  width: 200px;
+  min-width: 250px;
   border: 2px solid blue;
   margin-left: 15px;
-  height: 80%;
+  padding-block: 35px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.tab div {
+  display: flex;
+}
+
+.tab img {
+  margin-right: 20px;
+  transform: scale(1.5);
 }
 
 .content {

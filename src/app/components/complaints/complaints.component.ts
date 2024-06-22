@@ -42,7 +42,7 @@ export class ComplaintsComponent implements OnInit {
 
   constructor(private complaintStatusService:ComplaintStatusService,
     private complaintService:ComplaintsServiceService,private notification: ToastrService,
-    private route:ActivatedRoute, private router: Router
+    private route:ActivatedRoute, private router: Router,
   ) {}
 
 
