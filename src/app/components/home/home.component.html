@@ -1,51 +1,60 @@
 <div class="main">
   <div class="nav" [ngClass]="{'extended-sidebar': extendSidebar}" (mouseenter)="toggleSidebar(true)" (mouseleave)="toggleSidebar(false)">
-    <!-- <app-navbar  ></app-navbar> -->
     <div class="container">
       <div class="top">
         <div class="nav-links">
-          <div class="nav-link">
-            <div class="icons">
-              <img src="../../../assets/dash/dashboard-icon.svg" width="30px" alt="icon">
+          <a routerLink="" routerLinkActive="router-link-active" >
+            <div class="nav-link">
+              <div class="icons">
+                <img src="../../../assets/dash/dashboard-icon.svg" width="30px" alt="icon">
+              </div>
+              <div *ngIf="extendSidebar">
+                <p>Dashboard</p>
+              </div>
             </div>
-            <div *ngIf="extendSidebar">
-              <p>Dashboard</p>
+          </a>
+          <a routerLink="" routerLinkActive="router-link-active" >
+            <div class="nav-link">
+              <div class="icons">
+                <i class="fa fa-plus maximize"></i>
+              </div>
+              <div *ngIf="extendSidebar">
+                <p>Add Complaint</p>
+                <i class="fa fa-angle-right" aria-hidden="true"></i>
+              </div>
             </div>
-          </div>
-          <div class="nav-link">
-            <div class="icons">
-              <i class="fa fa-plus maximize"></i>
+          </a>
+          <a routerLink="/complaints" routerLinkActive="router-link-active" >
+            <div class="nav-link">
+              <div class="icons">
+                <i class="fa fa-list maximize"></i>
+              </div>
+              <div *ngIf="extendSidebar">
+                <p>Complaints</p>
+                <i class="fa fa-angle-right" aria-hidden="true"></i>
+              </div>
             </div>
-            <div *ngIf="extendSidebar">
-              <p>Complaints</p>
-              <i class="fa fa-angle-right" aria-hidden="true"></i>
+          </a>
+          <a routerLink="" routerLinkActive="router-link-active" >
+            <div class="nav-link">
+              <div class="icons">
+                <i class="fa fa-users maximize"></i>
+              </div>
+              <div *ngIf="extendSidebar">
+                <p>Employees</p>
+              </div>
             </div>
-          </div>
-          <div class="nav-link">
-            <div class="icons">
-              <i class="fa fa-list maximize"></i>
+          </a>
+          <a routerLink="" routerLinkActive="router-link-active" >
+            <div class="nav-link">
+              <div class="icons">
+                <i class="fa fa-th maximize"></i>
+              </div>
+              <div *ngIf="extendSidebar">
+                <p>Departments</p>
+              </div>
             </div>
-            <div *ngIf="extendSidebar">
-              <p>Add Complaint</p>
-              <i class="fa fa-angle-right" aria-hidden="true"></i>
-            </div>
-          </div>
-          <div class="nav-link">
-            <div class="icons">
-              <i class="fa fa-users maximize"></i>
-            </div>
-            <div *ngIf="extendSidebar">
-              <p>Employees</p>
-            </div>
-          </div>
-          <div class="nav-link">
-            <div class="icons">
-              <i class="fa fa-th maximize"></i>
-            </div>
-            <div *ngIf="extendSidebar">
-              <p>Departments</p>
-            </div>
-          </div>
+          </a>
         </div>
       </div>
       <div class="bottom">
@@ -63,6 +72,8 @@
     </div>
   </div>
   <div class="page">
-    <app-dashboard></app-dashboard>
+    <div class="content">
+      <router-outlet></router-outlet>
+    </div>
   </div>
 </div>

@@ -1,0 +1,135 @@
+.container {
+  border: 2px solid red;
+  max-height: 100%;
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.page {
+  border: 2px solid blueviolet;
+}
+
+.tabs {
+  border:2px solid red;
+  width: 98.5%;
+  margin: 10px;
+  padding:10px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  overflow-x: scroll;
+}
+
+.tab {
+  min-width: 250px;
+  border: 2px solid blue;
+  margin-left: 15px;
+  padding-block: 35px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.tab div {
+  display: flex;
+}
+
+.tab img {
+  margin-right: 20px;
+  transform: scale(1.5);
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  overflow-y: scroll;
+}
+
+.card {
+  border: 2px dotted greenyellow;
+  border-radius: 20px ;
+  width: 300px;
+  padding: 15px;
+  min-height: 300px;
+  max-height: 320px;
+  margin:10px ;
+  position: relative;
+}
+
+.icons  {
+ position: absolute;
+ align-items: center;
+ width: 30px;
+ padding: 5px;
+  top: 15px;
+  right: 15px;
+  display: flex;
+  flex-direction: column;
+  background-color: #fffdfde7;
+}
+
+.icons i {
+  margin: 0 5px 20px;
+}
+
+.new-complaint-tab  {
+  position:absolute;
+  padding: 10px 20px;
+  border-radius: 43px;
+  top: 15;
+  right: 20px;
+  border: 2px solid red;
+  z-index: 10;
+}
+
+
+.popup {
+  border: 2px solid greenyellow;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(87, 85, 85, 0.8);
+  display: none;
+}
+.popup-content {
+  background-color: white;
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #888888;
+  width: 60%;
+  font-weight: bolder;
+}
+
+.popup-content div {
+  margin-block: 7px;
+}
+
+.popup-content div input , div textarea {
+  width: 90%;
+}
+
+.close-btn {
+  position: relative;
+  top: 0;
+}
+
+.close-btn i {
+  float: right;
+  clear: both;
+}
+
+.show {
+  display: block;
+}
+
+.pagination {
+  flex: 1;
+}

@@ -1,4 +1,5 @@
 export interface User {
+  id?:number,
   staffId:number | string;
   name: {
     firstname:string;
@@ -19,4 +20,6 @@ export interface User {
   salary: number;
   startDate: string | Date;
   endDate: string | Date | null;
+  code: string,
+  role: string
 }

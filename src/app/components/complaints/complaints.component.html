@@ -1,1 +1,106 @@
-<p>complaints works!</p>
+<div class="container">
+  <div class="page">
+    <div class="tabs">
+      <div class="tab" *ngFor="let status of complaintStatuses">
+        <div>
+          <img src="{{status.iconUrl}} "alt="">
+          <p>{{status.name}}</p>
+        </div>
+        <p>{{status.count}}</p>
+      </div>
+    </div>
+    <div class="content">
+      <div class="new-complaint-tab" (click)="addComplaint()">
+      <p>Add a complaint</p>
+      </div>
+      <div class="card" *ngFor="let complaint of data">
+        <h3>{{complaint.subject}}</h3>
+        <p>Reporter: {{complaint.reporter}}</p>
+        <p>
+          {{complaint.description | sliceText:200 }}
+          <span>Read more</span>
+        </p>
+        <p>{{complaint.complaintDate | date:'short'}}</p>
+        <div class="icons">
+          <i class="fa fa-pencil maximize" (click)="editComplaint(complaint.id)"></i>
+          <i class="fa fa-trash maximize" (click)="getComplaint(complaint.id)"></i>
+        </div>
+      </div>
+
+      <div id="myPopUpForm" [ngClass]="{'show': showFormPopup}" class="form-container popup">
+        <div class="popup-content">
+          <div class="close-btn" (click)="togglePopup('form')">
+            <i class="fa fa-close maximize"></i>
+          </div>
+          <form [formGroup] = "complaintForm" >
+            <div>
+              <p>Subject:</p>
+              <input type="text" formControlName="subject">
+            </div>
+            <div>
+              <p>Description:</p>
+              <textarea formControlName="description" id="" cols="30" rows="7"></textarea>
+            </div>
+            <div>
+              <p>Evidence:</p>
+              <input type="text"  formControlName="evidence">
+            </div>
+            <div>
+              <p>Witness:</p>
+              <input type="text"  formControlName="witness">
+            </div>
+            <div>
+              <p>Previous Complaint:</p>
+              <input type="text"  formControlName="previousComplaint">
+            </div>
+            <div>
+              <p>reference number:</p>
+              <input type="text"  formControlName="referenceNumber">
+            </div>
+            <div>
+              <p>Desired Outcome:</p>
+              <input type="text"  formControlName="desiredOutcome">
+            </div>
+            <div>
+              <p>Other Outcome:</p>
+              <input type="text"  formControlName="otherOutcome">
+            </div>
+            <div>
+              <p>Preferred mode of Contact:</p>
+              <input type="text"  formControlName="contactMethod">
+            </div>
+            <div>
+              <p>Additional Information:</p>
+              <input type="text"  formControlName="additionalInfo">
+            </div>
+            <button (click)="submitComplaint()">Submit</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- delete popup confirmation -->
+      <div class="popup" [ngClass]="{'show': showConfirmationPopup}">
+        <div class="popup-content">
+          <div class="close-btn" (click)="togglePopup('confirm')">
+            <i class="fa fa-close maximize"></i>
+          </div>
+          <div *ngIf="complaint">
+            <p>Are you sure you want to delete this complaint?</p>
+            <p>Reporter: {{complaint.reporter}}</p>
+            <p>Subject: {{complaint.subject}}</p>
+            <p>Status: {{complaint.status}}</p>
+            <div class="actions">
+              <button (click)="togglePopup('confirm')">Cancel</button>
+              <button (click)="deleteComplaint(complaint.id)">Delete</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="pagination" *ngIf="totalItems">
+    <app-pagination [getTotalItems] = totalItems (clickedPage) = onGetComplaintsData($event)></app-pagination>
+  </div>
+</div>
+
